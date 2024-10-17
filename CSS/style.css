@@ -21,7 +21,6 @@ nav {
     justify-content: center;
     align-items: center;
     margin: 50px auto;
-  
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
@@ -69,4 +68,13 @@ footer {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+}
+section{
+    position: absolute;
+    box-shadow: 0 8px 16px rgba(43, 42, 42, 0.2);
+    right: 35px;
+    width: 20vw;
+    height: 40vh;
+    text-align: center;
+    top: 150px;
 }
