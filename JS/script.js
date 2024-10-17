@@ -56,7 +56,7 @@ function userinput() {
     uplode.addEventListener("click", () => {
         photo_gallary.unshift(user.value)
         names.unshift(us.value)
-        console.log(title.value);
+        alert("Uplod")
 
     })
 }
