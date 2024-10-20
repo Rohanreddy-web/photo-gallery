@@ -60,6 +60,9 @@ function userinput() {
 
     })
 }
+function displayphoto(){
+
+}
 let Refresh = (event)=> {
     event.preventDefault();
     return event.returnValue = "Are you sure you want to leave the page?";
@@ -69,6 +72,7 @@ let run=()=>{
     photonext()
    photoback()
    userinput()
+   displayphoto()
 }
 run()
 

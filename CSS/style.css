@@ -4,7 +4,6 @@
     padding: 0;
     font-family: 'Comic Sans MS', cursive, sans-serif;
 }
-
 nav {
     background-color: #1e88e5;
     color: white;
@@ -77,4 +76,42 @@ section{
     height: 40vh;
     text-align: center;
     top: 150px;
+}
+@media (max-width: 720px) {
+    nav {
+        padding: 10px 0;
+        font-size: 14px;
+    }
+
+    .box {
+        width: 90vw;
+        height: 40vh;
+        margin: 20px auto;
+    }
+
+    .images {
+        height: 70%;
+        width: 80%;
+    }
+
+    button {
+        padding: 8px 15px;
+        font-size: 14px;
+        margin: 5px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    section {
+        width: 60vw;
+        height: 25vh;
+        position: relative;
+        top: 100px;
+        left: 0;
+        right: 0;
+        margin: auto;
+      
+    }
 }
