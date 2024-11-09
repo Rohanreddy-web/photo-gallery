@@ -77,7 +77,7 @@ section{
     text-align: center;
     top: 150px;
 }
-@media (max-width: 720px) {
+@media (max-width: 950px) {
     nav {
         padding: 10px 0;
         font-size: 14px;
