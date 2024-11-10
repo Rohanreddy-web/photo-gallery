@@ -59,7 +59,6 @@ function userinput() {
         localStorage.setItem('photo_gallary', JSON.stringify(photo_gallary));
         localStorage.setItem('names', JSON.stringify(names));
         alert("Uploaded");
-        
     });
 }
 //TODO:deleting the LocalStorage
