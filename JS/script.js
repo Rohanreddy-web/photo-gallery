@@ -22,7 +22,7 @@ function photonext() {
         value++;
         if (value < photo_gallary.length) {
             let string = photo_gallary[value];
-            let add = string.includes(".com") ? string : `../photos/${string}`;
+            let add = string.includes(".com") ? string : `../photos/${string}`;//Turnary operator if true string else ../p
             image.src = add;
             name_ch.textContent = names[value];
         } else {
@@ -40,6 +40,7 @@ function photoback() {
             let string = photo_gallary[value];
             let add = string.includes(".com") ? string : `../photos/${string}`;
             image.src = add;
+            name_ch.textContent = names[value];
         } else {
             alert("nd");
             value = 0;
