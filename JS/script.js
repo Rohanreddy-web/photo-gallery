@@ -7,10 +7,10 @@ let names = ["Monkey D. Luffy", "Roronoa Zoro", "Vinsmoke Sanji", "Nami", "Nico 
 if (!localStorage.getItem('photo_gallary') || !localStorage.getItem('names')) {
     localStorage.setItem('photo_gallary', JSON.stringify(photo_gallary));
     localStorage.setItem('names', JSON.stringify(names));
+//TODO: Updating the data from the  Local Storage
 } else {
     let sGallary = localStorage.getItem('photo_gallary');
     let sNames = localStorage.getItem('names');
-//TODO: Updating the data from the  Local Storage
     photo_gallary = JSON.parse(sGallary);
     names = JSON.parse(sNames);
 }
