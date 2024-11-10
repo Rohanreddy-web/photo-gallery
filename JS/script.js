@@ -15,6 +15,7 @@ if (!localStorage.getItem('photo_gallary') || !localStorage.getItem('names')) {
     names = JSON.parse(sNames);
 }
 let value = -1;
+//TODO:NEXT PHOTO BUTTON
 function photonext() {
     let next = document.querySelector(".next");
     next.addEventListener("click", (eobj) => {
@@ -24,13 +25,13 @@ function photonext() {
             let add = string.includes(".com") ? string : `../photos/${string}`;
             image.src = add;
             name_ch.textContent = names[value];
-         
         } else {
             value = photo_gallary.length - 1;
             console.log(value);
         }
     });
 }
+//TODO:BACK PHOTO BUTTON
 function photoback() {
     let back = document.querySelector(".back");
     back.addEventListener("click", (eobj) => {
@@ -39,14 +40,13 @@ function photoback() {
             let string = photo_gallary[value];
             let add = string.includes(".com") ? string : `../photos/${string}`;
             image.src = add;
-         
         } else {
             alert("nd");
             value = 0;
         }
     });
 }
-
+//TODO:Taking user images using URL
 function userinput() {
     let user = document.querySelector("#url");
     let title = document.getElementById("us");
@@ -65,6 +65,7 @@ function userinput() {
 function delet() {
    photo_gallary.splice(value,1)
    names.splice(value,1)
+   //TODO: UPDATING  Local Storage
    localStorage.setItem('photo_gallary', JSON.stringify(photo_gallary));
    localStorage.setItem('names', JSON.stringify(names));
     
