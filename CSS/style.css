@@ -63,6 +63,14 @@ img {
     background-color: aliceblue;
 }
 
+.user-del{
+   background-color: red;
+   border-radius: 80px;
+   position: absolute;
+   top:130px;
+   right: 340px;
+}
+
 footer {
     display: flex;
     justify-content: center;
