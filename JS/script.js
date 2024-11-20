@@ -25,6 +25,7 @@ function photonext() {
             let add = string.includes(".com") ? string : `../photos/${string}`;//Turnary operator if true string else ../p
             image.src = add;
             name_ch.textContent = names[value];
+            console.log(value);
         } else {
             value = photo_gallary.length - 1;
             console.log(value);
@@ -36,6 +37,7 @@ function photoback() {
     let back = document.querySelector(".back");
     back.addEventListener("click", (eobj) => {
         value--;
+        console.log(value);
         if (value >= 0 && value < photo_gallary.length) {
             let string = photo_gallary[value];
             let add = string.includes(".com") ? string : `../photos/${string}`;

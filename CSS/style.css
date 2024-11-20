@@ -70,6 +70,9 @@ img {
    top:130px;
    right: 340px;
 }
+.user-del:hover{
+    background-color: rgba(219, 55, 55);
+}
 
 footer {
     display: flex;
